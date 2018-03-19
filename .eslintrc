@@ -1,5 +1,10 @@
 {
   "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "codeFrame": false
+  },
   "env": {
     "node": true,
     "es6": true,
@@ -12,8 +17,8 @@
     "expect" : false,
     "should" : false
   },
-  "plugins": ["node"],
   "rules": {
+    "strict": 0,
     "no-console": ["error", { "allow": ["warn", "error", "info"] }] ,
     "indent": [2, 2, { "SwitchCase": 1 }],
     "quotes": [2, "single"],
@@ -30,10 +35,9 @@
     "no-this-before-super": 2,
     "object-shorthand": [2, "always"],
     "prefer-spread": 1,
-    "require-yield": 2,
-    "node/exports-style": ["error", "module.exports"]
+    "require-yield": 2
   },
-  "extends": ["eslint:recommended", "plugin:node/recommended"]
+  "extends": ["eslint:recommended"]
 }
 
 

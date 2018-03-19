@@ -10,3 +10,6 @@ node_modules
 *.log.*
 .DS_STORE
 ._*
+
+# dist
+dist
