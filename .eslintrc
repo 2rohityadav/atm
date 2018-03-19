@@ -1,0 +1,39 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": false,
+    "mocha" : true
+  },
+  "globals": {
+    "beforeAll": false,
+    "afterAll": false,
+    "expect" : false,
+    "should" : false
+  },
+  "plugins": ["node"],
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }] ,
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "quotes": [2, "single"],
+    "linebreak-style": [2, "unix"],
+    "semi": ["error", "always", { "omitLastInOneLineBlock": true}],
+    "constructor-super": 2,
+    "no-confusing-arrow": 2,
+    "no-constant-condition": 2,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-extra-boolean-cast": 0,
+    "no-var": 1,
+    "no-this-before-super": 2,
+    "object-shorthand": [2, "always"],
+    "prefer-spread": 1,
+    "require-yield": 2,
+    "node/exports-style": ["error", "module.exports"]
+  },
+  "extends": ["eslint:recommended", "plugin:node/recommended"]
+}
+
+
