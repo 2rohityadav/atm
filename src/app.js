@@ -3,6 +3,7 @@ import NoteUnavailableException from './classes/NoteUnavailable';
 import InvalidArgumentException from './classes/InvalidArgument';
 
 function widthdrawMoney(value = 0){
+  console.info(value);
   const money = [100,50,20,10];
   let sets = [];
   try {
