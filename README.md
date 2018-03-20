@@ -45,3 +45,10 @@ Result: [Empty Set]
 * `npm test` to run mocha unit tests.
 * `npm run clean` to clean up `dist` folder.
 
+### Libraries used
+
+* `babel-cli`, `babel-eslint`, `babel-preset-es2015`, `babel-register` for scripting
+* `chai`, `mocha` for testing
+* `eslint`, `eslint-plugin-node`
+* `nodemon` to watch for changes in the files
+* `colors`, `pretty-error` for console output
