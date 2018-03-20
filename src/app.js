@@ -1,9 +1,11 @@
+import colors from 'colors';
+import PrettyError from 'pretty-error';
 import { ERROR_TYPES } from './constants/ErrorTypes';
 import NoteUnavailableException from './classes/NoteUnavailable';
 import InvalidArgumentException from './classes/InvalidArgument';
 
 function widthdrawMoney(value = 0){
-  console.info(value);
+  console.info(`Attempting to withdraw ${colors.yellow(value)}`);
   const money = [100,50,20,10];
   let sets = [];
   try {
@@ -24,10 +26,11 @@ function widthdrawMoney(value = 0){
       }
     }
 
-    return sets;
+    return colors.green(sets);
   }
   catch(err) {
-    return err;
+    let pe = new PrettyError();
+    return pe.render((err));
   }
 }
 
